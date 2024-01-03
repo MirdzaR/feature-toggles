@@ -1,0 +1,65 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "displayName": "Display Name 1",
+      "technicalName": "my-feature-a",
+      "expiresOn": "2023-12-31 23:59",
+      "description": "Description 1",
+      "inverted": false,
+      "customerIds": [
+        "1234",
+        "1234"
+      ],
+      "archived": false
+    },
+    {
+      "id": 2,
+      "displayName": "Display Name 2",
+      "technicalName": "my-feature-b",
+      "expiresOn": "2024-06-24 13:24",
+      "description": "Description 2",
+      "inverted": true,
+      "customerIds": [
+        "1234"
+      ],
+      "archived": false
+    },
+    {
+      "id": 3,
+      "displayName": "Display Name 3",
+      "technicalName": "my-feature-c",
+      "expiresOn": "2024-06-24 13:24",
+      "description": "Unleash the power of real-time text color changes using our live editor toggle. Enable users to play with various text hues, fostering an interactive and engaging environment within your application.",
+      "inverted": false,
+      "customerIds": [
+        "1235",
+        "1236"
+      ],
+      "archived": true
+    },
+    {
+      "id": 4,
+      "displayName": "Display Name 4",
+      "technicalName": "my-feature-d",
+      "expiresOn": "2024-06-24 13:24",
+      "description": "Description 4",
+      "inverted": true,
+      "customerIds": [
+        "1236"
+      ],
+      "archived": false
+    },
+    {
+      "displayName": "Display Name 567",
+      "technicalName": "5454",
+      "expiresOn": "2026-01-10 13:54",
+      "description": "Description 5555",
+      "inverted": false,
+      "customerIds": [
+        "1234"
+      ],
+      "id": 5
+    }
+  ]
+}

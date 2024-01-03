@@ -1,0 +1,61 @@
+<form [formGroup]="featureToggleForm" (ngSubmit)="onSubmitFeatureToggle()">
+  <div class="form-group">
+    <label for="displayName">Name</label>
+    <input
+      type="text"
+      id="displayName"
+      formControlName="displayName"
+      class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="technicalName">Technical Name</label>
+    <input
+      type="text"
+      id="technicalName"
+      formControlName="technicalName"
+      class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="expiresOn">Expiration Date</label>
+    <input
+      type="datetime"
+      id="expiresOn"
+      formControlName="expiresOn"
+      class="form-control"
+      placeholder="YYYY-MM-DD HH:MM">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      rows="10"
+      formControlName="description"
+      class="form-control">
+    </textarea>
+  </div>
+  <div class="form-group">
+    <label for="inverted">Inverted</label>
+    <input
+      type="checkbox"
+      id="inverted"
+      formControlName="inverted">
+  </div>
+  <div class="form-group">
+    <label for="customerIds">Customer</label>
+    <select
+      id="customerIds"
+      formControlName="customerIds"
+      class="form-control"
+      multiple>
+      <option value="1234">Customer 1234</option>
+      <option value="1234">Customer 1235</option>
+      <option value="1234">Customer 1236</option>
+      <option value="1234">Customer 1237</option>
+    </select>
+  </div>
+  <button
+    class="btn btn-primary"
+    type="submit"
+    [disabled]="!featureToggleForm.valid">{{ editMode ? 'Update' : 'Create' }}</button>
+    <!-- <button class="btn btn-primary" (click)="onClear()">Clear</button> -->
+</form>

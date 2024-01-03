@@ -1,0 +1,23 @@
+@if (feature) {
+  <div class="item-card">
+
+  <p><strong>Name:</strong>Name: {{ feature.displayName }}</p> <br>
+  <p><strong>Technical Name:</strong> {{ feature.technicalName }}</p> <br>
+  <p><strong>Expiraton Date:</strong> {{ feature.expiresOn }}</p> <br>
+  <p><strong>Description:</strong> {{ feature.description }}</p> <br>
+  <p><strong>Inverted:</strong> {{ feature.inverted }}</p> <br>
+  <p><strong>Customer Id's:</strong> {{ feature.customerIds }}</p> <br>
+
+  @if (feature.archived) {
+    <button class="btn btn-primary" (click)='onArchiveFeature()'> Remove from Archive </button>
+    <button class="btn btn-danger" type="button" (click)="onDelete()">Delete</button>
+  }
+  @else {
+    <button class="btn btn-primary" (click)='onEditFeature()'>Edit</button>
+    <button class="btn btn-primary" (click)='onArchiveFeature()'> Archive </button>
+  }
+</div>
+}
+@else {
+  <h3>Please choose Feature</h3>
+}

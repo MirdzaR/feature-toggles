@@ -1,0 +1,18 @@
+  <a
+    [ngStyle]="{'color': feature.archived ? 'red' : 'black'}"
+    [ngStyle]="{'background-color': toggleInactive() ? 'white' : '#5cb85c', 'color': feature.archived ? 'red' : 'black'}"
+    style="cursor: pointer;"
+    [routerLink]="[id]"
+    routerLinkActive="active"
+    class="list-group-item clearfix">
+    <div class="toggle-card">
+      <h3 class="col-xs-4">{{ feature.displayName }}</h3>
+
+      <p class="col-xs-7">
+        {{ feature.description.length > 20 ? ((feature.description | slice:0:20) + ' ...') : feature.description  }} </p>
+
+      <!-- TODO --- have to update to on/off switch -->
+      <!-- <button class="btn btn-primary">Toggle</button> -->
+    </div>
+
+  </a>

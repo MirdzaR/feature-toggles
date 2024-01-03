@@ -1,0 +1,9 @@
+<button class="btn btn-success" (click)="onNewFeature()">New Feature</button>
+<hr>
+
+@for (featureToggle of featureToggles; track featureToggle?.id) {
+  <app-list-item [feature]="featureToggle" [id]="featureToggle.id" />
+}
+@empty {
+  <h1>No Feature Toggles found!</h1>
+}
